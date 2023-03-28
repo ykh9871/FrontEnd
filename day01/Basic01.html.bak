@@ -19,9 +19,9 @@
         </ul>
       </nav>
     </header>
-    <main class="contents">
+    <main>
       <section id="healing">
-        <h2>몸과 마음이 치유되는 섬</h2>
+        <h2 class="myStyle2">몸과 마음이 치유되는 섬</h2>
         <div class="detail">
           <img src="images/healing.jpg">
           <p>쉼(Healing)의 공간으로 안내합니다</p>

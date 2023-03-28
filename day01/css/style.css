@@ -1,51 +1,51 @@
-		@import 
-		url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
-		/* 공통스타일 */
-		* {
-			margin:0;   /* 마진 리셋 */
-			padding:0;   /* 패딩 리셋 */
-			box-sizing: border-box;  /* 박스 영역은 테두리까지 */
-		}
+@import 
+url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+/* 공통스타일 */
+* {
+	margin:0;   /* 마진 리셋 */
+	padding:0;   /* 패딩 리셋 */
+	box-sizing: border-box;  /* 박스 영역은 테두리까지 */
+}
 
-		a{
-			text-decoration:none;
-		}
+a{
+	text-decoration:none;
+}
 
-		ul{
-			list-style : none;
-		}
+ul{
+	list-style : none;
+}
 
-		#container{
-			margin:0 auto;
-			width:1200px;
-			background-color: #fff;
-		}
+#container{
+	margin:0 auto;
+	width:1200px;
+	background-color: #fff;
+}
 
-		/* Header */
-		header{
-			color:#ffffff;
-			background-color:#045;
-			width:100%;
-			height:100px;
-		}
+/* Header */
+header{
+	color:#ffffff;
+	background-color:#045;
+	width:100%;
+	height:100px;
+}
 
-		#logo{
-			float:left;
-			width:250px;   /*  너비 */ 
-			height:100px;   /* 높이 */
-			line-height:100px;  /* 세로로 중간에 맞춤 - 줄간격을 높이 값과 같게 */
-			padding-left:20px;  /* 왼쪽에 여백 */
-		}
+#logo{
+	float:left;
+	width:250px;   /*  너비 */ 
+	height:100px;   /* 높이 */
+	line-height:100px;  /* 세로로 중간에 맞춤 - 줄간격을 높이 값과 같게 */
+	padding-left:20px;  /* 왼쪽에 여백 */
+}
 
-		#logo h1{
-			  font-family:'Merienda', cursive;
-			  font-weight:700;
-			  font-size:40px;   /* 글자 크기 */
-			  color:#fff;   /* 글자 색*/
-			  text-shadow:0 -1px 0 #222;  /* 그림자 색 */
-		}
+#logo h1{
+	  font-family:'Merienda', cursive;
+	  font-weight:700;
+	  font-size:40px;   /* 글자 크기 */
+	  color:#fff;   /* 글자 색*/
+	  text-shadow:0 -1px 0 #222;  /* 그림자 색 */
+}
 
-		/* 내비게이션 */
+/* 내비게이션 */
 nav{  
   float:right;   /* 오른쪽으로 플로팅 */
   width:900px;   /*   너비 */  
