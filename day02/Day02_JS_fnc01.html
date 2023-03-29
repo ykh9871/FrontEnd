@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<script>
+	  // javascript = 프로그래밍언어적 기술 + Web(HTML,CSS제어가능)
+	  function check(type,name){
+	   //DOM(문서내의 모든 요소를 Object로 제어할 수 있도록 만든 모델)
+	   var hObj = window.document.getElementById("result");
+	   hObj.innerHTML = "결과:"+ type +", name=" + name;
+	   hObj.style.color='red';
+
+	   var h2Obj = window.document.getElementById("params");
+	   for (var idx in arguments){
+		   h2Obj.innerHTML = h2Obj.innerHTML + "," + arguments[idx];
+	   }
+
+	   return;
+	  }
+	</script>
+ </head>
+ <body>
+  <h1 id="result">결과:</h1>
+  <h1 id="params"></h1>
+  <form>
+   	<input type="button" value="눌러보세요~~~~" 
+		onclick="check(50 ,'홍길동', true,999999,90,56);">
+  </form>
+ </body>
+</html>
