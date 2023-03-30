@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<script>
+    //literal(리터럴) - 보이는 그대로(값)
+    //일반 : 숫자리터럴, 문자리터럴
+    var i = 10;
+    var j = i; //리터럴이 아닌것
+    var z = 'i'; //문자열 리터럴
+    //배열리터럴, 함수리터럴, 객체리터럴
+    //함수 - 전역함수 선언
+    function show() { // 함수 이름이 반드시 명시가 되어야함
+        return;
+    }
+    //함수 리터럴 - 익명함수 선언(명시적인 이름이 없는)
+    var display = function(){
+        var fname='display';
+        window.alert("func call :" +fname);
+    };
+    //출력 명령
+    window.document.write("<h2>"+display+"<h2>");
+    function handler(func){
+        func();//함수 리터럴 --> 함수(명령어집합)실행 가능
+    }
+    handlier(display); // 실행 호출
+
+</script>
+    </head>
+    <body>
+        <h1 id="h">Click 해보세요</h1>
+        <script>
+            var hObj = document.getElementById('h');
+            //이벤트 처리기
+            hObj.onmouseover = function(){
+                this.style.color='red';
+            };
+            hObj.onmouseout = function(){
+                this.style.color='black'
+            }
+            //운영체제 --> onmouseover --> 함수리터럴을 함수로 전환시킴(실행)
+        </script>
+    </body>
+</html>

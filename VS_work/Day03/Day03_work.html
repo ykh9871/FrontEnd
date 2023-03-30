@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">        
+<script>
+    var enemy = {
+            x:200, //인스턴스 변수
+            y:400,
+            myshape : 'Enemy',
+
+            display:function(){
+                
+                document.write('<h2>'+" x : "+ this.x+"  y : "+this.y+ " : " + this.myshape+ '<\h2>') //그냥 x만 넣으면 지역변수만 찾음.
+            },
+            moveLeft:function(val){
+                this.x -=val
+                this.display();
+            },
+            moveRight:function(val){
+                this.x +=val
+                this.display();
+            }
+        };
+        enemy.display();
+        enemy.moveLeft(30);
+        enemy.moveRight(100);
+
+    //ES5 생성자함수 - 클래스 아님
+    //ES6 클래스 도입
+
+</script>
+    </head>
+    <body>
+
+    </body>
+</html>

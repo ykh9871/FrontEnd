@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">        
+<script>
+    //배열리터럴
+    var arr = [10,20,30,40,50];
+    var sarr = ['Hello', 'world','apple'];
+    //배열 = 숫자, 문자열, 논리값, 함수리터럴(코드), 객체, 배열
+    var jsarr = [10,27.8, 'Hello', function(){}, ['apple','banana'],{}];
+
+    for(var i in jsarr){
+        document.write("<h2 style='color:blue; background-color:skyblue;'>"+jsarr[i]+"</h2>");
+    }
+    //객체 리터럴 = JSON
+    var pobj = {
+        X:100,  //인스턴스 변수 
+        y:200, //this.x, this.y
+        myshape : 'Player',
+        display : function(){
+            var x='inner';
+            document.write('<h2>'+"x ="+this.X+", y="+this.y+" : "+this.myshape+"</h2>");
+        },
+        moveLeft: function(){
+            this.x = this.x-1;
+            this.display();
+        },
+        moveRight: function(){
+            this.x = this.x+1;
+            this.display();
+        }
+    };
+
+    pobj.display(); //객체 리터럴
+    
+    //ES5 생성자함수 - 클래스 아님
+    //ES6 클래스 도입
+
+</script>
+    </head>
+    <body>
+
+    </body>
+</html>
