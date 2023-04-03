@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+
+    function Enemy(x,y){
+        this.x = x;
+        this.y  = y;
+        this.myshape = "Enemy"
+    }
+    Enemy.prototype.display = function(){
+        window.alert(this.myshape + 'X : '+ this.x + "y : "+ this.y)
+    }
+    var enemy1 = new Enemy(123,456);
+    var enemy2 = new Enemy(100,200);
+    enemy1.display();
+    enemy2.display();
+    </script>
+</head>
+<body>
+</body>
+</html>
