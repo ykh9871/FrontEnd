@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <script>
+            //ES5 - OOP(class:사용자 정의 타입 X)
+            function Player5(){
+                this.x = 100; //인스턴스변수 ==> this=window --> new --> this=pobj5
+                this.y = 200;
+                this.myShape = 'Player';
+
+            }//생성자 함수 패턴
+
+            //생성자 함수 패턴으로 만든 객체들의 공유영역이 prototype
+            Player5.prototype.display = function(){
+                window.alert(this.myShape + ": x="+this.x+", y="+this.y);  
+            }
+
+            var pobj5 = new Player5();
+            pobj5.display();
+
+            var pobj5_2 = new Player5();
+            pobj5_2.display();
+
+            
+            //Enemy를 ES5버전으로 정의해보기(정리하기)        
+            function Enemy5(){
+                this.x = 220; //인스턴스변수 ==> this=window --> new --> this=pobj5
+                this.y = 300;
+                this.myShape = 'Enemy';
+            }
+
+            Enemy5.prototype.display = function(){
+                window.alert(this.myShape + ": x="+this.x+", y="+this.y);  
+            }
+
+            var eobj5 = new Enemy5();
+            eobj5.display();
+
+            var eobj5_2 = new Enemy5();
+            eobj5_2.display();
+
+            //ES6 - OOP(class --> new --> instance)
+            class Player6
+            {
+                constructor(){
+                    this.x = 10;
+                    this.y = 20;
+                    this.myShape = 'Player6';
+                }
+                display(){
+                window.alert(this.myShape + ": x="+this.x+", y="+this.y);  
+                }
+            }
+            //상속
+            class childPlayer extends Player6{
+                constructor(){
+                    super();
+                    //this.myShape='Player_Child';
+                }
+
+                moveLeft(){
+                    document.write('moveLeft');
+                }
+            }
+
+            var pobj6 = new Player6();
+            pobj6.display();
+
+            class Enemy6
+            {
+                constructor(){
+                    this.x = 20;
+                    this.y = 30;
+                    this.myShape = 'Enemy6';
+                }
+                display(){
+                window.alert(this.myShape + ": x="+this.x+", y="+this.y);  
+                }
+            }
+
+            var eobj6 = new Enemy6();
+            eobj6.display();
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
